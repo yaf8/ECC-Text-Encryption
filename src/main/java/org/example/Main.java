@@ -3,6 +3,7 @@ package org.example;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import java.security.*;
 import java.security.spec.ECGenParameterSpec;
+import java.util.Arrays;
 import java.util.Scanner;
 import javax.crypto.Cipher;
 
@@ -34,7 +35,9 @@ public class Main {
 
         // Print results
         System.out.println("Original message: " + message);
+        System.out.println("Encrypted value: " + Arrays.toString(encrypted));
         System.out.println("Encrypted message: " + new String(encrypted));
+        System.out.println("Decrypted value: " + Arrays.toString(decrypted));
         System.out.println("Decrypted message: " + new String(decrypted));
     }
 }
